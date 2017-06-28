@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before *::after {
+    box-sizing: border-box;
+}
+
+@keyframes rotating{
+    0% {
+        tranform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background: url("../img/bg.jpg") no-repeat;
+
+}
+
+.pointer {
+    height: 20.54vh;
+}
+
+.needle {
+    position: absolute;
+    left: 46.8vw;
+    width: 25.6vw;
+    z-index: 4;
+}
+
+.discImg {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -10.79vh;
+}
+
+.cover {
+    width: 49.07vw;
+    z-index: 1;
+    position: absolute;
+    animation: rotating 20s infinite linear;
+}
+
+.disc {
+    width: 78.93vw;
+    z-index: 2;
+}
+
+.discLight {
+    width: 78.93vw;
+    position: absolute;
+    z-index: 3;
+    animation: rotating 20s infinite linear;
+}
+
+.lyrics {
+     margin: 3.748vh auto 0;
+     flex-grow: 1;
+     text-align: center;
+     line-height: 2;
+}
+
+.lyrics h1 {
+    font-size: 16px;
+}
+
+.lyrics p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.lyrics .container {
+    height: 72px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.button a {
+    width: 39.07vw;
+    height: 5.49vh;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 5.49vh;
+    border: 1px solid #d43b32;
+    border-radius: 4px;
+    font-size: 4vw;
+    margin: 23px auto;
+}
+
+.button .open {
+    color: #d43b32;
+}
+
+.button .download {
+    background: #d43b32;
+    color: white;
+}
+
+
