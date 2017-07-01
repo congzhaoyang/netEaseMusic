@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+}
+
 @keyframes rotating{
     0% {
         tranform: rotate(0deg);
@@ -24,7 +28,6 @@
     flex-flow: column nowrap;
     justify-content: center;
     background: url("../img/bg.jpg") no-repeat;
-
 }
 
 .pointer {
@@ -36,6 +39,9 @@
     left: 46.8vw;
     width: 25.6vw;
     z-index: 4;
+    margin-top: -5px;
+    transform: rotate(0deg);
+    transform-origin:10% 0;
 }
 
 .discImg {
@@ -43,6 +49,21 @@
     justify-content: center;
     align-items: center; 
     margin-top: -10.79vh;
+}
+
+.fa {
+    position: absolute;
+    z-index: 4;
+    color: white;
+    opacity: 0.8;
+}
+
+.fa-play.disabled {
+    visibility: hidden; 
+}
+
+.fa-pause.disabled {
+    visibility: hidden; 
 }
 
 .cover {
@@ -65,23 +86,27 @@
 }
 
 .lyrics {
-     margin: 3.748vh auto 0;
+     margin: 10px auto 0;
      flex-grow: 1;
      text-align: center;
-     line-height: 2;
+     width: 100vw;
 }
 
 .lyrics h1 {
-    font-size: 16px;
+    font-size: 18px;
+    color: #FEFEFE;
 }
 
 .lyrics p {
     font-size: 14px;
     line-height: 24px;
+    color: #B0AFAE;
+    width: 100vw;
 }
 
 .lyrics .container {
     height: 72px;
+    overflow: hidden;
 }
 
 .button {
@@ -100,7 +125,7 @@
     border: 1px solid #d43b32;
     border-radius: 4px;
     font-size: 4vw;
-    margin: 23px auto;
+    margin: 20px auto;
 }
 
 .button .open {

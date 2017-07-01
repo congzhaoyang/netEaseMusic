@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./node_modules/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.com/libraries/normalize">
     <link rel="stylesheet" href="./css/song.css">
+    <link rel="stylesheet" href="./components/fortawesome/font-awesome/v4.7.0/css/font-awesome.css">
 </head>
 <body>
     <div class="page">
@@ -16,6 +15,8 @@
                 <img src="./img/needle-ip6.png" alt="" class="needle">
             </div>
             <div class="discImg">
+                <i class="fa fa-play fa-2x disabled" aria-hidden="true"></i>
+                <i class="fa fa-pause fa-2x" aria-hidden="true"></i>
                 <img src="./img/cover.jpg" alt="" class="cover">
                 <img src="./img/disc-ip6.png" alt="" class="disc">
                 <img src="./img/disc_light-ip6.png" alt="" class="discLight">
@@ -24,9 +25,7 @@
         <div class="lyrics">
             <h1>平凡之路</h1>
             <div class="container">
-                <p>作词：韩寒,朴树</p>
-                <p>作曲：朴树</p>
-                <p>演唱：朴树</p>
+
             </div>
         </div>
         <div class="button">
@@ -34,5 +33,7 @@
             <a href="#" class="download">下载</a>
         </div>
     </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="./song.js"></script>
 </body>
 </html>
