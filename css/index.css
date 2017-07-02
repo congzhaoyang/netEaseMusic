@@ -1,0 +1,126 @@
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: #D9453A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px; }
+  header .logo {
+    width: 142px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 10px; }
+  header .download-APP {
+    text-decoration: none;
+    width: 80.02px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px; }
+
+nav ul {
+  display: flex;
+  justify-content: space-around; }
+  nav ul li {
+    line-height: 40px;
+    display: inline-block;
+    width: 4em;
+    text-align: center; }
+  nav ul li.active {
+    color: #D9453A;
+    border-bottom: 2px solid #D9453A; }
+
+.recommended-playlist .title {
+  font-size: 17px;
+  padding-left: 9px;
+  border-left: 1px solid #D9453A; }
+.recommended-playlist ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .recommended-playlist ul li {
+    width: 123px;
+    height: 159px;
+    display: inline-block;
+    padding-bottom: 16px; }
+    .recommended-playlist ul li a {
+      background: url("http://via.placeholder.com/123x123");
+      display: inline-block;
+      height: 123px;
+      width: 123px; }
+    .recommended-playlist ul li p {
+      display: inline-block;
+      font-size: 13px;
+      margin: 0; }
+
+.latest-music .title {
+  font-size: 17px;
+  padding-left: 9px;
+  border-left: 1px solid #D9453A; }
+.latest-music a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  height: 55px; }
+  .latest-music a .container {
+    display: inline-block;
+    margin-left: 10px; }
+    .latest-music a .container h3 {
+      font-size: 17px;
+      text-decoration: none;
+      margin: 0; }
+    .latest-music a .container p {
+      font-size: 12px;
+      text-decoration: none;
+      margin: 0;
+      display: inline-block;
+      color: gray; }
+  .latest-music a .play-icon {
+    margin-right: 10px; }
+    .latest-music a .play-icon i {
+      display: inline-block;
+      width: 22px;
+      color: #ddd; }
+
+footer {
+  background: url("../img/recommand_bg_2x.png");
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; }
+  footer .logo {
+    padding-top: 16.9%;
+    display: flex;
+    justify-content: center; }
+    footer .logo .logo-svg {
+      width: 230px;
+      height: 44px;
+      display: inline-block; }
+  footer a {
+    width: 300px;
+    height: 38px;
+    border-radius: 38px;
+    border: 1px solid #D9453A;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 38px;
+    display: inline-block; }
+  footer .copyright {
+    font-size: 12px;
+    text-align: center;
+    transform: scale(0.75);
+    display: inline-block; }
+
+/*# sourceMappingURL=index.css.map */

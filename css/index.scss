@@ -1,0 +1,158 @@
+
+$background-red: #D9453A;
+
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: $background-red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    .logo {
+        width: 142px;
+        height: 25px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .download-APP {
+        text-decoration: none;
+        width: 80.02px;
+        height: 30px;
+        border-radius: 15px;
+        border: 1px solid white;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 10px;
+    }
+}
+
+nav {
+    ul {
+        display: flex;
+        justify-content: space-around;
+        li {
+            line-height: 40px;
+            display: inline-block;
+            width: 4em;
+            text-align: center;
+        }
+        li.active {
+            color: $background-red;
+            border-bottom: 2px solid $background-red;
+        }
+    }
+}
+
+.recommended-playlist {
+    .title {
+        font-size: 17px;
+        padding-left: 9px;
+        border-left: 1px solid $background-red;
+    }
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        li {
+            width: 123px;
+            height: 123px + 36px;
+            display: inline-block;
+            padding-bottom: 16px;
+            a {
+                background: url("http://via.placeholder.com/123x123");
+                display: inline-block;
+                height: 123px;
+                width: 123px;
+            }
+            p {
+                display: inline-block;
+                font-size: 13px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.latest-music {
+    .title {
+        font-size: 17px;
+        padding-left: 9px;
+        border-left: 1px solid $background-red;
+    }
+    a {
+        text-decoration : none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        height: 55px;
+        .container {
+            display: inline-block;
+            margin-left: 10px;
+            h3 {
+                font-size: 17px;
+                text-decoration: none;
+                margin: 0;
+                
+            }
+            p {
+                font-size: 12px;
+                text-decoration: none;
+                margin: 0;
+                display: inline-block;
+                color: gray;
+            }
+        }
+        .play-icon {
+            margin-right: 10px;
+            i {
+               display: inline-block; 
+               width: 22px;
+               color: #ddd;
+            }
+        }
+    } 
+}
+
+footer {
+    background: url("../img/recommand_bg_2x.png");
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    .logo {
+        padding-top: 16.9%;
+        display: flex;
+        justify-content: center;
+        .logo-svg {
+            width: 230px;
+            height: 44px;
+            display: inline-block;
+        }
+    }
+    a {
+        width: 300px;
+        height: 38px;
+        border-radius: 38px;
+        border: 1px solid $background-red;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        line-height: 38px;
+        display: inline-block;
+    }
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+        transform: scale(.75);
+        display: inline-block;
+    }
+}
