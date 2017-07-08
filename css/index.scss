@@ -59,21 +59,22 @@ nav {
         font-size: 17px;
         padding-left: 9px;
         border-left: 1px solid $background-red;
+        margin: 20px 0 14px 0;
     }
     ul {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         li {
-            width: 123px;
-            height: 123px + 36px;
+            width: 32.3vw;
+            min-height: 32.3vw + 9.6vw;
             display: inline-block;
             padding-bottom: 16px;
             a {
                 background: url("http://via.placeholder.com/123x123");
                 display: inline-block;
-                height: 123px;
-                width: 123px;
+                height: 32.3vw;
+                width: 100%;
             }
             p {
                 display: inline-block;
@@ -97,14 +98,25 @@ nav {
         align-items: center;
         color: black;
         height: 55px;
+        margin: 0 10px;
+        border-bottom: 1px solid #ddd;
         .container {
             display: inline-block;
-            margin-left: 10px;
+            
             h3 {
                 font-size: 17px;
                 text-decoration: none;
                 margin: 0;
                 
+            }
+            svg {
+                width: 12px;
+                height: 8px;
+                #icon-sq {
+                    width: 12px;
+                    height: 8px;
+                    fill: red;
+                }
             }
             p {
                 font-size: 12px;
@@ -119,7 +131,7 @@ nav {
             i {
                display: inline-block; 
                width: 22px;
-               color: #ddd;
+               color: #aaa;
             }
         }
     } 
@@ -130,8 +142,9 @@ footer {
     height: 200px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
     .logo {
         padding-top: 16.9%;
         display: flex;
@@ -159,5 +172,11 @@ footer {
         text-align: center;
         transform: scale(.75);
         display: inline-block;
+        padding-bottom: 10px;
     }
+}
+
+#icon-sq {
+    color: red;
+    fill: red;
 }

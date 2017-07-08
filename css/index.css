@@ -44,21 +44,22 @@ nav ul {
 .recommended-playlist .title {
   font-size: 17px;
   padding-left: 9px;
-  border-left: 1px solid #D9453A; }
+  border-left: 1px solid #D9453A;
+  margin: 20px 0 14px 0; }
 .recommended-playlist ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between; }
   .recommended-playlist ul li {
-    width: 123px;
-    height: 159px;
+    width: 32.3vw;
+    min-height: 41.9vw;
     display: inline-block;
     padding-bottom: 16px; }
     .recommended-playlist ul li a {
       background: url("http://via.placeholder.com/123x123");
       display: inline-block;
-      height: 123px;
-      width: 123px; }
+      height: 32.3vw;
+      width: 100%; }
     .recommended-playlist ul li p {
       display: inline-block;
       font-size: 13px;
@@ -74,14 +75,22 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   color: black;
-  height: 55px; }
+  height: 55px;
+  margin: 0 10px;
+  border-bottom: 1px solid #ddd; }
   .latest-music a .container {
-    display: inline-block;
-    margin-left: 10px; }
+    display: inline-block; }
     .latest-music a .container h3 {
       font-size: 17px;
       text-decoration: none;
       margin: 0; }
+    .latest-music a .container svg {
+      width: 12px;
+      height: 8px; }
+      .latest-music a .container svg #icon-sq {
+        width: 12px;
+        height: 8px;
+        fill: red; }
     .latest-music a .container p {
       font-size: 12px;
       text-decoration: none;
@@ -93,15 +102,16 @@ nav ul {
     .latest-music a .play-icon i {
       display: inline-block;
       width: 22px;
-      color: #ddd; }
+      color: #aaa; }
 
 footer {
   background: url("../img/recommand_bg_2x.png");
   height: 200px;
   width: 100%;
   display: flex;
-  justify-content: center;
-  flex-flow: row wrap; }
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap; }
   footer .logo {
     padding-top: 16.9%;
     display: flex;
@@ -125,6 +135,11 @@ footer {
     font-size: 12px;
     text-align: center;
     transform: scale(0.75);
-    display: inline-block; }
+    display: inline-block;
+    padding-bottom: 10px; }
+
+#icon-sq {
+  color: red;
+  fill: red; }
 
 /*# sourceMappingURL=index.css.map */

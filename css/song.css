@@ -71,6 +71,7 @@ body {
     z-index: 1;
     position: absolute;
     animation: rotating 20s infinite linear;
+    animation-play-state: running;
 }
 
 .disc {
@@ -83,6 +84,7 @@ body {
     position: absolute;
     z-index: 3;
     animation: rotating 20s infinite linear;
+    animation-play-state: running;
 }
 
 .lyrics {
