@@ -56,7 +56,6 @@ nav ul {
     display: inline-block;
     padding-bottom: 16px; }
     .recommended-playlist ul li a {
-      background: url("http://via.placeholder.com/123x123");
       display: inline-block;
       height: 32.3vw;
       width: 100%; }
@@ -64,6 +63,22 @@ nav ul {
       display: inline-block;
       font-size: 13px;
       margin: 0; }
+  .recommended-playlist ul li:nth-child(1) a {
+    background: url("../img/recommoned/track_radio_199_13_1.jpg");
+    background-size: cover; }
+  .recommended-playlist ul li:nth-child(2) a {
+    background: url("../img/recommoned/109951163004167876.jpeg"); }
+  .recommended-playlist ul li:nth-child(3) a {
+    background: url("../img/recommoned/1424967077460786.jpeg"); }
+  .recommended-playlist ul li:nth-child(4) a {
+    background: url("../img/recommoned/18634523069554746.jpeg");
+    background-size: cover; }
+  .recommended-playlist ul li:nth-child(5) a {
+    background: url("../img/recommoned/19066631137462753.jpeg");
+    background-size: cover; }
+  .recommended-playlist ul li:nth-child(6) a {
+    background: url("../img/recommoned/300 (1).jpeg");
+    background-size: cover; }
 
 .latest-music .title {
   font-size: 17px;
