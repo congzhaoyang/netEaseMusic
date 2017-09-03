@@ -5,8 +5,8 @@
 ![](./img/1504417572.png)
 
 ### 主页
-![](./img/index.png =270*1032)
+![](./img/index.png =270x1032)
 
 ### 播放器
-![](./img/player.png =270*480)
+![](./img/player.png =270x480)
 
